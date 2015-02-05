@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <include layout="@layout/action_bar_with_back"/>
+
+    <View android:id="@+id/noLifeHealthQaLine"
+          android:layout_height="6dp"
+          android:layout_width="match_parent"
+          android:layout_marginTop="00dp"
+          android:background="@android:color/darker_gray"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:layout_gravity="center">
+
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:gravity="center"
+                          android:layout_gravity="center"
+                          android:visibility="visible">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="70dp"
+                          android:textStyle="normal"
+                          android:text="@string/ans_error"
+                          android:textColor="@android:color/black"
+                          android:layout_marginTop="0dp"
+                          android:layout_gravity="center_horizontal"/>
+
+
+                <LinearLayout android:id="@+id/noLifeHeartLL"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:gravity="center"
+                              android:layout_gravity="center_horizontal">
+                    <ImageView android:id="@+id/ansFailPlayLife1"
+                               android:layout_width="80dp"
+                               android:layout_height="80dp"
+                               android:layout_margin="10dp"/>
+                    <ImageView android:id="@+id/ansFailPlayLife2"
+                               android:layout_width="80dp"
+                               android:layout_height="80dp"
+                               android:layout_margin="10dp"/>
+                    <ImageView android:id="@+id/ansFailPlayLife3"
+                               android:layout_width="80dp"
+                               android:layout_height="80dp"
+                               android:layout_margin="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView android:id="@+id/return_video"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/remain_heart"
+                      android:textSize="26dp"
+                      android:textColor="@color/text_dark_blackbrown"
+                      android:layout_marginTop="5dp"
+                      android:layout_gravity="center_horizontal"
+                      android:gravity="center_horizontal"/>
+
+            <Button android:id="@+id/ansFailQAStartPlayBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/continue_play"
+                    android:textSize="30dp"
+                    android:textColor="@drawable/txt_style_solid_brown_1"
+                    android:background="@drawable/btn_style_solid_brown_1"/>
+
+            <Button android:id="@+id/ansFailQAExitPlayBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/exit_play"
+                    android:textSize="30dp"
+                    android:textColor="@drawable/btn_white_black_text"
+                    android:background="@drawable/btn_style_solid_orange"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

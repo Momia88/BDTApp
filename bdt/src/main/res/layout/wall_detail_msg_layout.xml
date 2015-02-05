@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+        <ImageView
+                android:id="@+id/imgUserPic"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pp_ic_img_default"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_size_26"
+                    android:textColor="@color/txt_redbrown"
+                    android:text="--"
+                    android:layout_marginLeft="10dp"/>
+            <TextView
+                    android:id="@+id/txtMsgTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/txt_size_22"
+                    android:textColor="@color/brown"
+                    android:text="發文日期：--"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/txtMsgShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textSize="@dimen/common_size_24sp"
+                android:textColor="@color/txt_redbrown"
+                android:layout_margin="10dp"
+                android:scrollbars="vertical"/>
+
+        <LinearLayout
+                android:id="@+id/imgListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View android:layout_height="10dp"
+          android:layout_width="match_parent"
+          android:background="@color/pp_line_color_33"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+        <TextView
+                android:id="@+id/txtGoodFriends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:layout_toLeftOf="@+id/btnGoodAdd"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/common_size_24sp"
+                android:textColor="@color/txt_redbrown"
+                android:paddingLeft="10dp"
+                android:lines="2"
+                android:clickable="true"
+                android:focusable="true"
+                android:scrollbars="vertical"/>
+        <ImageView
+                android:id="@+id/btnGoodAdd"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_good_article"/>
+    </RelativeLayout>
+</LinearLayout>

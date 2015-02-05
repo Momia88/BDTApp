@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ww_map_area">
+        <item>北台灣</item>
+        <item>中台灣</item>
+        <item>南台灣</item>
+        <item>東台灣</item>
+        <item>離島</item>
+    </string-array>
+
+    <string-array name="ww_map_typearray_deep">
+        <item>@drawable/ic_tw_north_deep</item>
+        <item>@drawable/ic_tw_center_deep</item>
+        <item>@drawable/ic_tw_south_deep</item>
+        <item>@drawable/ic_tw_east_deep</item>
+        <item>@drawable/ic_tw_island_deep</item>
+    </string-array>
+
+    <string-array name="ww_map_typearray_light">
+        <item>@drawable/ic_tw_north_light</item>
+        <item>@drawable/ic_tw_center_light</item>
+        <item>@drawable/ic_tw_south_light</item>
+        <item>@drawable/ic_tw_east_light</item>
+        <item>@drawable/ic_tw_island_light</item>
+    </string-array>
+
+    <string-array name="ww_percent_typearray_deep">
+        <item>@drawable/ic_percent_deep_0</item>
+        <item>@drawable/ic_percent_deep_10</item>
+        <item>@drawable/ic_percent_deep_20</item>
+        <item>@drawable/ic_percent_deep_30</item>
+        <item>@drawable/ic_percent_deep_40</item>
+        <item>@drawable/ic_percent_deep_50</item>
+        <item>@drawable/ic_percent_deep_60</item>
+        <item>@drawable/ic_percent_deep_70</item>
+        <item>@drawable/ic_percent_deep_80</item>
+        <item>@drawable/ic_percent_deep_90</item>
+    </string-array>
+
+    <string-array name="ww_percent_typearray_light">
+        <item>@drawable/ic_percent_light_0</item>
+        <item>@drawable/ic_percent_light_10</item>
+        <item>@drawable/ic_percent_light_20</item>
+        <item>@drawable/ic_percent_light_30</item>
+        <item>@drawable/ic_percent_light_40</item>
+        <item>@drawable/ic_percent_light_50</item>
+        <item>@drawable/ic_percent_light_60</item>
+        <item>@drawable/ic_percent_light_70</item>
+        <item>@drawable/ic_percent_light_80</item>
+        <item>@drawable/ic_percent_light_90</item>
+    </string-array>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:background="#ffffffff">
+    <include layout="@layout/action_bar_with_back"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_marginTop="70dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+            <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/news_hot"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/news_hot"
+                    android:visibility="visible"/>
+            <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="205dp"
+                    android:id="@+id/news_photo"
+                    android:layout_marginTop="5dp"
+                    android:padding="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/qanews_no_image"
+                    />
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="93dp"
+                    android:id="@+id/audio_play"
+                    android:background="@drawable/btn_h_article_audio_play"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/news_title"
+                    android:text="      "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_size"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="30dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="        "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/health_news_content_size"
+                    android:singleLine="false"
+                    android:id="@+id/news_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignRight="@+id/news_title"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="     "
+                    android:id="@+id/news_author"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/health_news_content_size"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="right"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="     "
+                    android:id="@+id/news_date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/health_news_content_size"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="right"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/favor_btn"
+                    android:textSize="@dimen/common_size"
+                    android:textColor="@drawable/txt_style_solid_brown_1"
+                    android:background="@drawable/btn_style_solid_brown_1"
+                    android:text="@string/favorite_this_article"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="129dp"
+                    android:visibility="gone"
+                    android:id="@+id/textView_space"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/relativeLayout_option"
+            android:visibility="gone">
+        <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:id="@+id/seekBar_audio"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="103dp"/>
+        <ImageView
+                android:id="@+id/audio_pop_background"
+                android:layout_width="wrap_content"
+                android:layout_height="109dp"
+                android:src="@drawable/health_audio_speak"
+                android:layout_alignParentBottom="true"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:layout_alignParentBottom="true">
+            <Button
+                    android:id="@+id/audio_pop_play"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btn_h_audio_pause"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

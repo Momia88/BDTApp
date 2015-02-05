@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="民國"
+                android:layout_margin="5dp"
+                android:textSize="@dimen/common_size"
+                android:layout_gravity="center_vertical"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年"
+                    android:textSize="@dimen/common_size"
+                    android:layout_gravity="center_horizontal"/>
+            <com.coretronic.bdt.module.CustomNumberPicker
+                    android:id="@+id/yearPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月"
+                    android:textSize="@dimen/common_size"
+                    android:layout_gravity="center_horizontal"/>
+            <com.coretronic.bdt.module.CustomNumberPicker
+                    android:id="@+id/monthPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日"
+                    android:textSize="@dimen/common_size"
+                    android:layout_gravity="center_horizontal"/>
+            <com.coretronic.bdt.module.CustomNumberPicker
+                    android:id="@+id/dayPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_size"
+            android:text="OK"
+            android:id="@+id/button"/>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:background="#ffffffff" android:orientation="vertical">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_next">
+
+        <include layout="@layout/action_bar_with_back"/>
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="36dp"
+                        android:textColor="@color/black"
+                        android:text="您可能是："
+                        android:id="@+id/online_doctor_question"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/black"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"/>
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp">
+
+                    <LinearLayout
+                            android:id="@+id/linear_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        <TextView
+                                android:id="@+id/diseaseText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/main_text_size"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:text=""/>
+
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textColor="@color/black"
+                                  android:textSize="@dimen/common_size"
+                                  android:text="可能機率："/>
+
+                        <TextView android:id="@+id/relationPercent"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textColor="@color/red"
+                                  android:textSize="@dimen/main_text_size"
+                                  android:text=""/>
+
+                        <Button
+                                android:layout_width="150sp"
+                                android:layout_height="60sp"
+                                android:text="@string/button_know_more"
+                                android:id="@+id/online_btn_more"
+                                android:textSize="@dimen/common_size"
+                                android:textColor="@color/tutor_skip"
+                                android:background="@drawable/btn_shape_selector"
+                                android:layout_marginTop="20dip"
+                                android:layout_below="@+id/linear_layout"/>
+                    </LinearLayout>
+                    <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/online_turtle"/>
+                </RelativeLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/black"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                        android:id="@+id/diseaseListLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

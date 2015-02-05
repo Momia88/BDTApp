@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:background="#ffffffff" android:orientation="vertical">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="36dp"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:id="@+id/online_tab_disease_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/common_size"
+                    android:textColor="@color/black"
+                    android:text="【建議看診科別】"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"/>
+            <LinearLayout
+                    android:id="@+id/online_tab_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp">
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/online_btn_doctor_near"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/doctor_button_near"
+                    android:textSize="@dimen/common_size"
+                    android:textColor="@color/tutor_skip"
+                    android:background="@drawable/btn_shape_selector"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- shape如果不声明形状则默认为正方形 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/white"/>
+            <stroke android:width="2dp"
+                    android:color="@color/btn_stroke_baa8a2"/>
+            <corners android:radius="1dp"/>
+        </shape>
+    </item>
+</selector>

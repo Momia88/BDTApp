@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="0px" android:bottom="0px" android:left="0px" android:right="0px">
+        <shape>
+            // bottom color -> top color
+            <gradient
+                    android:startColor="@color/bg_gradient_right"
+                    android:endColor="@color/bg_gradient_left"
+                    android:type="linear" android:angle="180"
+                    android:centerX="0.5" android:centerY="0.5" />
+            <stroke
+                    android:width="0dp"
+                    android:color="@color/btn_border_color" />
+            <corners
+                    android:topLeftRadius="0dip"
+                    android:topRightRadius="0dip"
+                    android:bottomLeftRadius="0dip"
+                    android:bottomRightRadius="0dip" />
+        </shape>
+    </item>
+</layer-list>  

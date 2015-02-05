@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_transparent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/btn_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/common_size"
+                android:lines="3"
+                android:text=""
+                android:textColor="@color/black"
+                android:background="@color/pop_window_odd"
+                android:layout_margin="4dp"
+                />
+
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="3"
+                android:textSize="@dimen/common_size"
+                android:text=""
+                android:id="@+id/btn_2"
+                android:textColor="@color/black"
+                android:background="@color/pop_window_odd"
+                android:layout_margin="4dp"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="3"
+                android:textSize="@dimen/common_size"
+                android:text=""
+                android:id="@+id/btn_3"
+                android:textColor="@color/black"
+                android:background="@color/pop_window_even"
+                android:layout_margin="4dp"/>
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="3"
+                android:textSize="@dimen/common_size"
+                android:text=""
+                android:id="@+id/btn_4"
+                android:textColor="@color/black"
+                android:background="@color/pop_window_even"
+                android:layout_margin="4dp"/>
+    </LinearLayout>
+</LinearLayout>

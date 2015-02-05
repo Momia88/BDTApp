@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- action bar -->
+    <dimen name="actionbar_main_size">32dp</dimen>
+    <dimen name="txt_size_28">28dp</dimen>
+    <dimen name="txt_size_26">26dp</dimen>
+    <dimen name="txt_size_24">24dp</dimen>
+    <dimen name="txt_size_22">22dp</dimen>
+    <dimen name="txt_size_20">20dp</dimen>
+    <dimen name="txt_size_18">18dp</dimen>
+    <dimen name="txt_size_10">10dp</dimen>
+    <dimen name="popwindow_btn_height">120dp</dimen>
+
+    <dimen name="common_size">28sp</dimen>
+    <dimen name="common_size_large">32sp</dimen>
+    <dimen name="common_size_small">26sp</dimen>
+    <dimen name="common_size_24sp">24sp</dimen>
+    <dimen name="common_super_size_small">22sp</dimen>
+    <dimen name="common_size_18sp">18sp</dimen>
+    <dimen name="common_bigsize_40sp">40sp</dimen>
+    <dimen name="common_bigsize_44sp">44sp</dimen>
+    <dimen name="common_bigsize_48sp">48sp</dimen>
+
+    <dimen name="doctor_comment_ques_size">26sp</dimen>
+    <dimen name="main_text_size">32sp</dimen>
+    <dimen name="tutor_logo_title">36sp</dimen>
+    <dimen name="calender_work">40sp</dimen>
+    <dimen name="qa_ques_title">40sp</dimen>
+    <dimen name="doctor_commen_division">24sp</dimen>
+    <dimen name="item_text_size">24sp</dimen>
+    <dimen name="item_detail_size">26sp</dimen>
+    <dimen name="item_list_symbol">20sp</dimen>
+    <dimen name="dialog_text_size">8sp</dimen>
+    <dimen name="recommend_item_size">24sp</dimen>
+    <dimen name="health_news_content_size">24sp</dimen>
+    <dimen name="radio_button_size">20sp</dimen>
+
+</resources>

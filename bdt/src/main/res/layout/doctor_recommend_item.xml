@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/contentLL"
+                android:layout_gravity="center"
+                android:layout_weight="0.7">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="doctor name"
+                    android:id="@+id/doctor_name"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/main_text_size"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="8dp"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceLarge"
+                      android:text="hospital name"
+                      android:id="@+id/hospital_name"
+                      android:layout_gravity="center_horizontal"
+                      android:textColor="@color/black"
+                      android:textSize="@dimen/recommend_item_size"
+                      android:layout_marginBottom="5dip"
+                      android:layout_marginLeft="12dp"
+                      android:layout_marginRight="8dp"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceLarge"
+                      android:text="division"
+                      android:id="@+id/division"
+                      android:textColor="@color/black"
+                      android:textSize="@dimen/recommend_item_size"
+                      android:layout_marginBottom="10dip"
+                      android:layout_marginLeft="12dp"
+                      android:layout_marginRight="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/arrowLL"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.3">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="〉"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/main_text_size"
+                    android:id="@+id/textView"
+                    android:layout_marginTop="45dp"
+                    android:layout_gravity="right|top"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/manual_btn"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/doctor_comment"
+            android:textSize="@dimen/common_size"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_shape_selector"/>
+</LinearLayout>

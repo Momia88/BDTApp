@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#ffffffff"
+              android:weightSum="1">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="商店名稱AAA"
+            android:id="@+id/restaurant_name"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/diary_dark_brown"
+            android:textSize="@dimen/main_text_size"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft = "12dp"
+            android:layout_marginRight = "8dp"/>
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/layout_star"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="#ffffffff"-->
+    <!--android:weightSum="1"-->
+    <!--android:layout_marginBottom="10dip">-->
+
+    <!--<TextView android:layout_width="150dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="★★★★★"-->
+    <!--android:id="@+id/img_star_count"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="@dimen/item_text_size"-->
+    <!--android:layout_marginBottom="5dip"-->
+    <!--android:layout_marginLeft = "12dp"-->
+    <!--android:layout_marginRight = "8dp"/>-->
+
+    <!--<TextView android:layout_width="150dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="3.8顆星"-->
+    <!--android:id="@+id/star_rating"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="@dimen/item_text_size"-->
+    <!--android:layout_marginBottom="5dip"-->
+    <!--android:layout_marginLeft = "12dp"-->
+    <!--android:layout_marginRight = "8dp"/>-->
+
+    <!--</LinearLayout>-->
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:text="距離1.1公里"
+              android:id="@+id/location_distance"
+              android:textColor="@color/diary_dark_brown"
+              android:textSize="@dimen/item_text_size"
+              android:layout_marginBottom="10dip"
+              android:layout_marginLeft = "12dp"
+              android:layout_marginRight = "8dp"/>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:stretchColumns="0,1">
+
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="●"
+                      android:id="@+id/symbol_1"
+                      android:layout_gravity="center_horizontal"
+                      android:textColor="#ff000000"
+                      android:textSize="@dimen/item_list_symbol"
+                      android:layout_marginLeft="10dp"/>
+            <TextView android:layout_width="320dp"
+                      android:layout_height="wrap_content"
+                      android:text="地址地址地址地址地址地址地址地址地址地址地址地"
+                      android:id="@+id/restaurant_address"
+                      android:textColor="@color/txt_ec6a1a"
+                      android:layout_span="1"
+                      android:layout_marginBottom="10dp"
+                      android:textSize="@dimen/item_detail_size"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="10dp"/>
+        </TableRow>
+
+        <TableRow android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="●"
+                      android:id="@+id/symbol_8"
+                      android:layout_gravity="center_horizontal"
+                      android:textColor="#ff000000"
+                      android:textSize="@dimen/item_list_symbol"
+                      android:layout_marginLeft="10dp"/>
+            <TextView android:layout_width="320dp"
+                      android:layout_height="wrap_content"
+                      android:text="電話"
+                      android:id="@+id/restaurant_phone"
+                      android:layout_gravity="left"
+                      android:textColor="@color/txt_ec6a1a"
+                      android:layout_span="1"
+                      android:textSize="@dimen/item_detail_size"
+                      android:layout_marginBottom="10dip"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginRight="7dp"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

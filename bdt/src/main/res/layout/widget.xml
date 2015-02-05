@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="180dp"
+              android:orientation="vertical"
+              android:id="@+id/widget_layout"
+              android:background="@drawable/widget_bg">
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/buttonIntoSplash"
+            android:background="#00000000"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeTV"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="--"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignTop="@+id/timeTV"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="--"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignTop="@+id/timeTV"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:text="--:--"/>
+
+    <ImageView
+            android:id="@+id/img_msg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="112dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/widget_circle_msg"/>
+
+    <ImageView
+            android:id="@+id/img_step"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/widget_circle_step"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_msg"
+            android:layout_marginRight="130dp"
+            android:layout_marginTop="112dp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:text="訊息"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/step_count"
+            android:layout_marginRight="37dp"
+            android:layout_marginTop="95dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:text="計步"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/count_msg"
+            android:layout_marginRight="133dp"
+            android:layout_marginTop="140dp"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:text="--"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/count_step"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="130dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:text="--"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/temp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="103dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/country"
+            android:textSize="38sp"
+            android:text="--"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/temp_01"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="125dp"
+            android:layout_toRightOf="@+id/temp"
+            android:textSize="20sp"
+            android:text="@string/temperature_unit"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/country"
+            android:layout_marginTop="125dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="--"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rain_rate"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="150dp"
+            android:textSize="20sp"
+            android:text="降雨機率--%"/>
+
+</RelativeLayout>

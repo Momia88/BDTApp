@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/bgLL"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_margin="0dp"
+        >
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5" android:gravity="center">
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/one_min_learn"
+                android:text="@string/tutorial_oneminute_learn"
+                android:textSize="@dimen/common_size"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@drawable/btn_white_darkbrown_text"
+                android:background="@drawable/btn_style_solid_lightbrown"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="@string/tutorial_skip_learn"
+                android:textSize="@dimen/common_size"
+                android:id="@+id/skip_tutor"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@drawable/btn_white_darkbrown_text"
+                android:background="@drawable/btn_style_solid_lightbrown"/>
+
+    </LinearLayout>
+</LinearLayout>

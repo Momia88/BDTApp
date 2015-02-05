@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/mission_second_bg"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white">
+    <include layout="@layout/action_bar_with_tools"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/bar_total">
+
+        <View android:id="@+id/bar_cnt"
+              android:layout_height="10dp"
+              android:layout_width="match_parent"
+              android:background="@color/bar_current"/>
+
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_gravity="center_horizontal"
+                          android:gravity="center"
+                          android:layout_marginTop="20dp">
+
+                <ImageView android:layout_width="80dp"
+                           android:layout_height="100dp"
+                           android:layout_marginRight="30dp"
+                           android:src="@drawable/mission_photo3"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_marginLeft="0dp">
+
+
+                    <TextView
+                            android:id="@+id/mission3_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="任務3："
+                            android:textSize="30sp"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"/>
+
+                    <TextView
+                            android:id="@+id/mission3_take_photo_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mission_hint3"
+                            android:textSize="30sp"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/step3_photo_select_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="從相簿挑選"
+                    android:textSize="30sp"
+                    android:textColor="@color/dark_redbrown"
+                    android:background="@drawable/btn_style_solid_yelloworange"/>
+
+            <Button android:id="@+id/step3_take_camera_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="馬上拍"
+                    android:textSize="30sp"
+                    android:textColor="@color/dark_redbrown"
+                    android:background="@drawable/btn_style_solid_yelloworange"/>
+
+            <Button android:id="@+id/step3_skip_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="略過"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/btn_style_solid_darkbrown"/>
+
+            <Button android:id="@+id/step3_back_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="上一步"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/btn_style_solid_darkbrown"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <style name="AlertDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:textSize">30sp</item>
+    </style>
+</resources>

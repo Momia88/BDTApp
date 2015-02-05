@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        >
+    <include layout="@layout/action_bar_with_back"/>
+
+    <View android:id="@+id/noLifeHealthQaLine"
+          android:layout_height="6dp"
+          android:layout_width="match_parent"
+          android:layout_marginTop="0dp"
+          android:background="@android:color/darker_gray"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/qa_explain_correct"
+                  android:layout_gravity="center"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical"
+                  android:background="@android:color/white"
+                  android:visibility="visible">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/qa_correct_title"
+                  android:textSize="@dimen/common_bigsize_48sp"
+                  android:textColor="@color/dark_redbrown"
+                  android:layout_marginTop="10dp"/>
+
+        <ImageView android:id="@+id/correctIV"
+                   android:layout_width="270dp"
+                   android:layout_height="320dp"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="0dp"
+                   android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:id="@+id/dataSyncTV"
+                  android:text="@string/data_sync"
+                  android:textSize="@dimen/txt_size_18"
+                  android:layout_gravity="bottom|center_horizontal"
+                  android:gravity="bottom"
+                  android:textColor="@android:color/darker_gray"
+                  android:layout_marginBottom="10dp"
+                  android:layout_weight="1"
+                  android:visibility="visible"/>
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/qa_explain_detail"
+                android:visibility="gone"
+                android:background="@color/bg_gray">
+
+        <LinearLayout
+                android:id="@+id/answerLL"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_gravity="center_horizontal"
+                          android:gravity="center_horizontal"
+
+                    >
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/qa_explain_title"
+                          android:text="   "
+                          android:textSize="34dp"
+                          android:textColor="@color/text_dark_brown"
+                          android:layout_marginTop="10dp"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/qa_explain_content"
+                          android:text=""
+                          android:textSize="24dp"
+                          android:textColor="@android:color/black"
+                          android:ellipsize="end"
+                          android:layout_gravity="left"
+                          android:layout_marginLeft="20dp"
+                          android:layout_marginRight="20dp"
+                          android:layout_marginTop="10dp"
+                          android:layout_marginBottom="20dp"
+                          android:maxLines="99"
+                          android:singleLine="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="66dp"
+                              android:orientation="horizontal"
+                              android:layout_gravity="center_horizontal"
+                              android:gravity="center_horizontal"
+                              android:background="@color/white"
+                        >
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/continue_correct"
+                              android:textSize="30dp"
+                              android:textColor="@android:color/black"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/qa_explain_ansnum"
+                              android:text="  "
+                              android:textSize="40dp"
+                              android:gravity="center"
+                              android:textColor="@color/dark_brown"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_gravity="center"
+                              android:gravity="center"
+                              android:background="@color/white"
+                        >
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/you_remain_heart"
+                              android:textSize="30dp"
+                              android:textColor="@android:color/black"/>
+
+                    <LinearLayout android:id="@+id/noLifeBestHeartLL"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:gravity="center"
+                                  android:layout_gravity="center"
+                                  android:layout_marginBottom="10dp"
+                                  android:layout_marginLeft="10dp">
+
+                        <ImageView android:id="@+id/qa_explain_heart1"
+                                   android:layout_width="40dp"
+                                   android:layout_height="40dp"
+                                   android:layout_marginRight="5dp"/>
+                        <ImageView android:id="@+id/qa_explain_heart2"
+                                   android:layout_width="40dp"
+                                   android:layout_height="40dp"
+                                   android:layout_margin="5dp"/>
+                        <ImageView android:id="@+id/qa_explain_heart3"
+                                   android:layout_width="40dp"
+                                   android:layout_height="40dp"
+                                   android:layout_marginLeft="5dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                <Button
+                        android:id="@+id/qa_explain_exitbtn"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:textSize="@dimen/txt_size_28"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/exit"
+                        android:textColor="@drawable/btn_white_black_text"
+                        android:background="@drawable/btn_style_solid_orange"
+                        android:layout_weight="1"/>
+
+                <Button
+                        android:id="@+id/qa_explain_nextbtn"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:textSize="@dimen/txt_size_28"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/next_question"
+                        android:textColor="@drawable/txt_style_solid_brown_1"
+                        android:background="@drawable/btn_style_solid_brown_1"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

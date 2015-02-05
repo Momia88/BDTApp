@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relative_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <include layout="@layout/action_bar"/>
+    <!--new message layout-->
+    <FrameLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/newMessageFL"
+                 android:layout_below="@id/navigationBar"
+                 android:layout_alignParentRight="true"
+                 android:visibility="invisible"
+                 android:layout_marginRight="70dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_alignParentEnd="true"
+            >
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/newMessage"
+                   android:visibility="visible"
+                   android:layout_margin="0dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newMsgTV"
+                android:layout_gravity="center"
+                android:text="新留言"
+                android:textSize="34dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/bubble_txt"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newMsgCount"
+                android:layout_gravity="center"
+                android:text="--"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="14dp"
+                android:textColor="@color/bubble_txt"/>
+
+    </FrameLayout>
+
+    <!--new Articles layout-->
+    <FrameLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/newArticlesFL"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:visibility="invisible"
+                 android:layout_marginLeft="10dp"
+            >
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/newArticles"
+                   android:visibility="visible"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newArticlesTV"
+                android:layout_gravity="center"
+                android:text="新文章"
+                android:textSize="34dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/bubble_txt"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newArticlesCount"
+                android:layout_gravity="center"
+                android:text="--"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="14dp"
+                android:textColor="@color/bubble_txt"/>
+    </FrameLayout>
+    <!--android:src="@drawable/main_newarticles"-->
+
+    <!--new friends layout-->
+    <FrameLayout android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/newFriendsFL"
+                 android:layout_marginTop="38dp"
+                 android:layout_marginRight="10dp"
+                 android:layout_below="@+id/newMessageFL"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentEnd="true">
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/newFriends"
+                   android:visibility="visible"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newFriendsTV"
+                android:layout_gravity="center"
+                android:text="新朋友"
+                android:textSize="34dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/bubble_txt"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newFriendsCount"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="14dp"
+                android:textColor="@color/bubble_txt"/>
+    </FrameLayout>
+    <!--android:src="@drawable/main_newfriends"-->
+
+    <!--masco imageview-->
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/masco"
+               android:layout_marginLeft="15dp"
+               android:layout_marginBottom="20dp"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentBottom="true"/>
+
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:gravity="right"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginBottom="4dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentBottom="true">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/mainDateTV"
+                  android:text="01/01"
+                  android:textColor="@color/white"
+                  android:textSize="26dp"/>
+
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_gravity="right"
+                      android:gravity="right">
+
+            <!--@dimen/common_size_small-->
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="  "
+                      android:id="@+id/mainLocate"
+                      android:textColor="@color/white"
+                      android:textSize="26dp"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="--"
+                      android:id="@+id/temperatureTV"
+                      android:textColor="@color/white"
+                      android:textSize="40dp"/>
+            <!--@dimen/common_bigsize_44sp-->
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/temperature_unit"
+                      android:id="@+id/temperature_unitTV"
+                      android:textColor="@color/white"
+                      android:textSize="40dp"
+                    />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="0dp">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/rain"
+                      android:id="@+id/main_rain"
+                      android:textColor="@color/white"
+                      android:textSize="26dp"/>
+
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text=" -- "
+                      android:id="@+id/rainTV"
+                      android:textColor="@color/white"
+                      android:textSize="26dp"
+                      android:layout_below="@+id/mainLunarTV"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/rain_unit"
+                      android:id="@+id/main_rain_unit"
+                      android:textColor="@color/white"
+                      android:textSize="26dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

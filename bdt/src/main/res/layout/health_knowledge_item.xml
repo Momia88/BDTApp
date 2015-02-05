@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1"
+              android:layout_gravity="center"
+              android:background="#ffffffff">
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/news_photo"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/news_no_pic"
+            android:visibility="visible"/>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_gravity="center">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="標題標題標題標題標 題標題標題標題標..."
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_size_small"
+                android:id="@+id/news_title"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"/>
+
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:id="@+id/news_hot"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+
+                android:visibility="visible"/>
+    </LinearLayout>
+
+</LinearLayout>

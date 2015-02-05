@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:background="#baa8a2">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/friend_about_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_size" />
+    <TextView
+            android:id="@+id/tv_self_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0900000000"
+            android:textColor="#ff5500"
+            android:textSize="@dimen/common_size" />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/friend_about_description"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_size" />
+</LinearLayout>

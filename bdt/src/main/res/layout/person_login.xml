@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1"
+              android:background="@color/white">
+    <include layout="@layout/action_bar_no_option"/>
+    <EditText
+            android:id="@+id/pp_edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:inputType="phone"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="請輸入手機號碼"
+            android:textSize="@dimen/common_size"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/pp_login"
+            android:id="@+id/pp_btn_login_sumit"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@drawable/txt_style_solid_brown_1"
+            android:textSize="@dimen/common_size"
+            android:background="@drawable/btn_style_solid_brown_1"
+            android:layout_gravity="center_horizontal"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/pp_btn_register"
+            android:id="@+id/pp_btn_login_add"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/common_size"
+            android:textColor="@drawable/btn_white_black_text"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_style_solid_orange"
+            android:layout_marginTop="30dp"/>
+
+</LinearLayout>
+

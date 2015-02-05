@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--android:minWidth 最小寬度-->
+<!--android:minHeight 最小高度-->
+<!--android:updatePeriodMillis 組件更新頻率（毫秒)-->
+<!--android:initialLayout 組件佈局XML的位置-->
+<!--android:configure Widget設置用Activity-->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:minWidth="250dp"
+                    android:minHeight="110dp"
+                    android:updatePeriodMillis="0"
+                    android:initialLayout="@layout/widget">
+</appwidget-provider>

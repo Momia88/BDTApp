@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:background="#ffffffff" android:orientation="vertical">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_next">
+
+        <include layout="@layout/action_bar_with_back"/>
+        <!-- 設置內容的權重為1 -->
+        <FrameLayout
+                android:id="@+id/fragment_content"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                />
+
+        <!-- 設置選項卡的權重為默認 -->
+        <android.support.v4.app.FragmentTabHost
+                android:id="@android:id/tabhost"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <!-- 設置每個選項卡之間權重為1 -->
+            <FrameLayout
+                    android:id="@+id/fragment_tabmost_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+        </android.support.v4.app.FragmentTabHost>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/helf">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/common_size"
+                android:lines="3"
+                android:text="LINE"
+                android:id="@+id/lineBtn"
+                />
+
+        <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:lines="3"-->
+                <!--android:textSize="@dimen/common_size"-->
+                <!--android:text="我的\n收藏"-->
+                <!--android:id="@+id/myFavorite"-->
+                <!--/>-->
+    </LinearLayout>
+    <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!-->-->
+        <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:lines="3"-->
+                <!--android:textSize="@dimen/common_size"-->
+                <!--android:text="看過\n的文章"-->
+                <!--android:id="@+id/reviewed"/>-->
+        <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:lines="3"-->
+                <!--android:textSize="@dimen/common_size"-->
+                <!--android:text="找文章"-->
+                <!--android:id="@+id/findArticle"/>-->
+    <!--</LinearLayout>-->
+</LinearLayout>

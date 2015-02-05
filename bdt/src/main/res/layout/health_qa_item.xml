@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1"
+              android:layout_gravity="center"
+              android:background="#ffffffff"
+              android:layout_marginTop="8dp"
+              android:layout_marginBottom="8dp">
+
+    <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:id="@+id/qa_item_sn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/common_size"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            />
+
+    <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/qa_photo_item"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/qa_photo_item"
+            android:visibility="visible"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_size"
+            android:id="@+id/qa_name_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qa_continue_unit"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_size"
+            android:layout_gravity="center_vertical"
+            />
+    <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=" : "-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="@dimen/common_size"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--/>-->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_size"
+            android:id="@+id/qaGradeCount"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_gravity="center_vertical"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qa_unit"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_size"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            />
+</LinearLayout>
+

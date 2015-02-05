@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <!--<include layout="@layout/action_bar_no_option"/>-->
+    <View android:id="@+id/bar_cnt"
+          android:layout_height="10dp"
+          android:layout_width="match_parent"
+          android:background="@color/view_bar"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                >
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_marginLeft="20dp"
+                          android:layout_marginTop="10dp">
+
+                <LinearLayout android:id="@+id/walkDateLL"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/wall_walkwayinfo"
+                              android:textColor="@color/txt_3c2622"
+                              android:textSize="@dimen/common_size"/>
+                    <TextView android:id="@+id/walkwayDate"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="-月-日(-)"
+                              android:textColor="@color/txt_3c2622"
+                              android:textSize="@dimen/common_size"/>
+
+                </LinearLayout>
+                <LinearLayout android:id="@+id/weatherLL"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/weather"
+                              android:textColor="@color/txt_3c2622"
+                              android:textSize="@dimen/common_size"/>
+                    <TextView android:id="@+id/weatherDescript"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="--"
+                              android:textColor="@color/txt_3c2622"
+                              android:textSize="@dimen/common_size"/>
+
+                </LinearLayout>
+                <LinearLayout android:id="@+id/walkNumLL"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/wall_walknum"
+                              android:textColor="@color/txt_3c2622"
+                              android:textSize="@dimen/common_size"/>
+                    <TextView android:id="@+id/walkNum"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="--"
+                              android:textColor="@color/txt_3c2622"
+                              android:textSize="@dimen/common_size"/>
+                    <TextView android:id="@+id/walk_unit"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/walkway_unit"
+                              android:textColor="@color/txt_3c2622"
+                              android:textSize="@dimen/common_size"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/diaryInfoLL"
+                          android:orientation="vertical"
+                          android:layout_marginTop="20dp">
+
+
+                <LinearLayout android:id="@+id/titleLL"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_gravity="center_horizontal">
+                    <!--<TextView android:layout_width="wrap_content"-->
+                              <!--android:layout_height="wrap_content"-->
+                              <!--android:text="@string/diary_wall_iwentto"-->
+                              <!--android:textColor="@color/txt_3c2622"-->
+                              <!--android:textStyle="bold"-->
+                              <!--android:textSize="@dimen/common_size_large"-->
+                              <!--android:layout_marginRight="10dp"/>-->
+
+                    <TextView android:id="@+id/walkwayTitle"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="--"
+                              android:textColor="@color/txt_3c2622"
+                              android:textStyle="bold"
+                              android:textSize="@dimen/common_size_large"
+                              android:layout_marginLeft="10dp"
+                              android:layout_marginRight="10dp"
+                              android:maxLines="4"
+                              android:singleLine="false" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/missionLL1">
+
+
+                    <ImageView android:id="@+id/missionPhoto1"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="18dp"
+                               android:src="@drawable/detail_wall_noimg"
+                               android:gravity="center_horizontal"
+                               android:scaleType="fitCenter"
+                               android:layout_margin="10dp"/>
+
+                    <TextView android:id="@+id/missionComment1"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text=""
+                              android:textColor="@color/txt_8a6c62"
+                              android:layout_marginTop="10dp"
+                              android:layout_marginLeft="10dp"
+                              android:textStyle="bold"
+                              android:gravity="left"
+                              android:layout_gravity="left"
+                              android:textSize="@dimen/common_size"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/missionLL2">
+
+
+                    <ImageView android:id="@+id/missionPhoto2"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="18dp"
+                               android:src="@drawable/detail_wall_noimg"
+                               android:gravity="center_horizontal"
+                               android:scaleType="fitCenter"
+                               android:layout_margin="10dp"/>
+
+                    <TextView android:id="@+id/missionComment2"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text=""
+                              android:textColor="@color/txt_8a6c62"
+                              android:layout_marginTop="10dp"
+                              android:layout_marginLeft="10dp"
+                              android:textStyle="bold"
+                              android:gravity="left"
+                              android:layout_gravity="left"
+                              android:textSize="@dimen/common_size"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/missionLL3">
+
+
+                    <ImageView android:id="@+id/missionPhoto3"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="18dp"
+                               android:src="@drawable/detail_wall_noimg"
+                               android:gravity="center_horizontal"
+                               android:scaleType="fitCenter"
+                               android:layout_margin="10dp"/>
+
+                    <TextView android:id="@+id/missionComment3"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text=""
+                              android:textColor="@color/txt_8a6c62"
+                              android:layout_marginTop="10dp"
+                              android:layout_marginLeft="10dp"
+                              android:textStyle="bold"
+                              android:gravity="left"
+                              android:layout_gravity="left"
+                              android:textSize="@dimen/common_size"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/missionLL4">
+
+
+                    <ImageView android:id="@+id/missionPhoto4"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="18dp"
+                               android:src="@drawable/detail_wall_noimg"
+                               android:gravity="center_horizontal"
+                               android:scaleType="fitCenter"
+                               android:layout_margin="10dp"/>
+
+                    <TextView android:id="@+id/missionComment4"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text=""
+                              android:textColor="@color/txt_8a6c62"
+                              android:layout_marginTop="10dp"
+                              android:layout_marginLeft="10dp"
+                              android:textStyle="bold"
+                              android:gravity="left"
+                              android:layout_gravity="left"
+                              android:textSize="@dimen/common_size"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:id="@+id/missionLL5">
+
+
+                    <ImageView android:id="@+id/missionPhoto5"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="18dp"
+                               android:src="@drawable/detail_wall_noimg"
+                               android:gravity="center_horizontal"
+                               android:scaleType="fitCenter"
+                               android:layout_margin="10dp"/>
+
+                    <TextView android:id="@+id/missionComment5"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text=""
+                              android:textColor="@color/txt_8a6c62"
+                              android:layout_marginTop="10dp"
+                              android:layout_marginLeft="10dp"
+                              android:textStyle="bold"
+                              android:gravity="left"
+                              android:layout_gravity="left"
+                              android:textSize="@dimen/common_size"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View android:id="@+id/bar_cntbtm"
+                  android:layout_height="14dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_width="match_parent"
+                  android:background="@color/view_bar"/>
+
+
+                <RelativeLayout
+                        android:id="@+id/whofellGoodLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                    <TextView
+                            android:id="@+id/goodNameTV1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:layout_toLeftOf="@+id/goodArticleIV"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/common_size_24sp"
+                            android:textColor="@color/txt_redbrown"
+                            android:paddingLeft="10dp"
+                            android:lines="2"
+                            android:scrollbars="vertical"/>
+                    <ImageView
+                            android:id="@+id/goodArticleIV"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_good_article"/>
+                </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

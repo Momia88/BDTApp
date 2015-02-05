@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffffff"
+              android:weightSum="1">
+
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:text="this is question"
+              android:id="@+id/question"
+              android:layout_gravity="center_horizontal"
+              android:textColor="@color/doctor_comment"
+              android:textSize="@dimen/doctor_comment_ques_size"
+              android:layout_marginBottom="10dip"
+              android:layout_marginLeft = "10dp"
+              android:layout_marginRight = "10dp"/>
+
+    <!-- stretchColumns 指定欄位填滿剩餘的空間，欄位索引從0開始-->
+    <!-- shrinkColumns 縮小指定欄位的空間，欄位索引從0開始-->
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/tableLL"
+                 android:shrinkColumns="1"
+                 android:layout_weight="0.19"
+                 android:layout_marginBottom="30dp">
+
+        <!--<TableRow>-->
+            <!--<TextView android:layout_width="match_parent"-->
+                      <!--android:layout_height="wrap_content"-->
+                      <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                      <!--android:text="●"-->
+                      <!--android:id="@+id/symbol_1"-->
+                      <!--android:layout_gravity="center_horizontal"-->
+                      <!--android:textColor="#ff000000"-->
+                      <!--android:textSize="@dimen/doctor_comment_ques_size"/>-->
+            <!--<TextView android:layout_width="match_parent"-->
+                      <!--android:layout_height="wrap_content"-->
+                      <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                      <!--android:text="item1"-->
+                      <!--android:id="@+id/item1"-->
+                      <!--android:layout_gravity="left"-->
+                      <!--android:textColor="@color/black"-->
+                      <!--android:layout_span="2"-->
+                      <!--android:textSize="@dimen/doctor_comment_ques_size"/>-->
+        <!--</TableRow>-->
+        <!--<TableRow>-->
+            <!--<TextView android:layout_width="match_parent"-->
+                      <!--android:layout_height="wrap_content"-->
+                      <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                      <!--android:text="●"-->
+                      <!--android:id="@+id/symbol_2"-->
+                      <!--android:layout_gravity="center_horizontal"-->
+                      <!--android:textColor="@color/black"-->
+                      <!--android:textSize="@dimen/doctor_comment_ques_size"/>-->
+            <!--<TextView android:layout_width="match_parent"-->
+                      <!--android:layout_height="wrap_content"-->
+                      <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                      <!--android:text="item2"-->
+                      <!--android:id="@+id/item2"-->
+                      <!--android:layout_gravity="left"-->
+                      <!--android:textColor="@color/black"-->
+                      <!--android:layout_span="2"-->
+                      <!--android:textSize="@dimen/doctor_comment_ques_size"/>-->
+        <!--</TableRow>-->
+
+
+        <!--<TableRow>-->
+            <!--<TextView android:layout_width="match_parent"-->
+                      <!--android:layout_height="wrap_content"-->
+                      <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                      <!--android:text="●"-->
+                      <!--android:id="@+id/symbol_4"-->
+                      <!--android:layout_gravity="center_horizontal"-->
+                      <!--android:textColor="@color/black"-->
+                      <!--android:textSize="@dimen/doctor_comment_ques_size"/>-->
+            <!--<TextView android:layout_width="match_parent"-->
+                      <!--android:layout_height="wrap_content"-->
+                      <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                      <!--android:text="item3"-->
+                      <!--android:id="@+id/item3"-->
+                      <!--android:layout_gravity="left"-->
+                      <!--android:textColor="@color/black"-->
+                      <!--android:textSize="@dimen/doctor_comment_ques_size"/>-->
+        <!--</TableRow>-->
+    </TableLayout>
+</LinearLayout>

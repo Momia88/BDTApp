@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/action_bar_with_back" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <EditText
+                    android:id="@+id/edt_friend_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:hint="@string/friend_edt_find_friend_hint"
+                    android:textSize="@dimen/common_size"/>
+
+            <Button
+                    android:id="@+id/btn_find_friend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="@string/friend_btn_find_friend"
+                    android:textSize="@dimen/common_size_small"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_style_solid_brown_1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/friend_find_child_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+    </LinearLayout>
+
+</LinearLayout>

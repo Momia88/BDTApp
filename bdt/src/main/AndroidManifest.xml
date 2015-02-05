@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.coretronic.bdt"
+          android:versionCode="4"
+          android:versionName="1.0.2">
+    <uses-sdk
+            android:minSdkVersion="14"
+            android:targetSdkVersion="22"/>
+    <permission
+            android:name="com.coretronic.bdt.permission.C2D_MESSAGE"
+            android:protectionLevel="signature"/>
+    <uses-permission android:name="com.coretronic.bdt.permission.C2D_MESSAGE"/>
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- Required to phone call -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+            android:glEsVersion="0x00020000"
+            android:required="true"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+
+    <application
+            android:name=".GlobalVariable"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher">
+
+        <activity android:name="SplashScreen"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        // **************** tutorial page ****************
+        // 教學導覽頁面第1頁
+        <activity
+                android:name=".Tutorial.TutorFirstPageActivity"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        // 教學導覽頁面第2頁
+        <activity
+                android:name=".Tutorial.TutorSecondPageActivity"
+                android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        // 教學導覽頁面第3頁
+        <activity
+                android:name=".Tutorial.TutorThirdPageActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+                android:name=".FilePostTest"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+
+        // 我要找步道
+        <activity
+                android:name=".WalkWay.WalkWayActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+                android:name=".WalkWay.WalkWayFriendsListActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        // 日記
+        <activity
+                android:name=".WalkWay.Diary.DiaryMainActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        // 塗鴉牆
+        <activity
+                android:name=".MessageWall.WallActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity
+                android:name=".MessageWall.WallMsgDetailActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity
+                android:name=".MessageWall.WallGoodListActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        // 個人
+        <activity android:name=".Person.PersonActivity"
+                  android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTask"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+        // 個人登入
+        <activity android:name=".Person.Register.PersonLoginActivity"
+                  android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTask"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+
+        // 計步記錄
+        <activity
+                android:name=".Person.NotifyListActivity"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <!--好友列表-->
+        <activity android:name=".Friend.FriendActivity"
+                  android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTask"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <!--好友自動邀請設定-->
+        <activity android:name=".Friend.FriendSettingAutoActivity"
+                  android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTask"
+                  android:theme="@android:style/Theme.NoTitleBar"/>
+
+        // 計步器
+        <activity
+                android:name=".WalkWay.StepCount.StepCountMainActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        // 計步記錄
+        <activity
+                android:name=".WalkWay.StepCount.PersonalStepRecord"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        // 我的記錄
+        <activity
+                android:name=".WalkWay.StepCount.WalkWayCountRecord"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        // 附近餐廳
+        <activity
+                android:name=".WalkWay.NearStore.NearRestaurantActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        // 附近商店
+        <activity
+                android:name=".WalkWay.NearStore.NearStoreActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        // 健康心知
+        <activity
+                android:name=".HealthKnowledge.HealthAllArticleListActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoTitleBar"
+                android:launchMode="singleTask"/>
+
+        // 健康問答
+        <activity
+                android:name=".HealthQA.HealthQAMainActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoTitleBar"
+                android:launchMode="singleTask"/>
+
+        <activity
+                android:name=".HealthKnowledge.HealthArticleDetailActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoTitleBar"
+                android:launchMode="singleTask"/>
+        <activity
+                android:name=".HealthKnowledge.HealthArticleFinder"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity
+                android:name=".NewArticlesListActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity
+                android:name=".NewMessageListActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity
+                android:name=".HealthKnowledge.HealthAnswerActivity"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+                android:name=".HealthKnowledge.HealthArticleDetailForFinder"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        // 我要找好食影片頁
+        <activity
+                android:name=".GoodFoodFinder.GoodFoodFinder"
+                android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+        // 我要找好食問題頁
+        <activity
+                android:name=".GoodFoodFinder.GoodFoodFinderQuestion"
+                android:windowSoftInputMode="stateHidden"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity
+                android:name=".LoginActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoTitleBar"
+                android:launchMode="singleTask"/>
+        <activity
+                android:name=".MainAcitvity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoTitleBar"
+                android:launchMode="singleTask">
+
+            <!-- URL Scheme Definition -->
+            <!-- 1. Binding to custom URL scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="health8"/>
+            </intent-filter>
+            <!-- 2. Binding to HTTP URL scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http" android:host="cloudap.coretronic.com"
+                      android:path="/BDT/NewsRedirect/redirect.php"/>
+            </intent-filter>
+
+        </activity>
+
+        <!-- Widget 設定 WidgetConfigAct
+        <activity android:name=".WidgetConfigAct">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <!-- Widget -->
+        <receiver android:name=".WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.coretronic.bdt.8BITCLOCK_WIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="UPLOAD_STEP_COUNT"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/app_widget"/>
+        </receiver>
+
+        <!-- Widget Service-->
+        <service android:name=".WidgetService">
+            <intent-filter>
+                <action android:name="android.appwidget.action.EXAMPLE_APP_WIDGET_SERVICE"/>
+            </intent-filter>
+        </service>
+
+        <!-- GCM -->
+        <receiver android:name="com.coretronic.bdt.gcm.GCMReceiver"
+                  android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.coretronic.bdt"/>
+            </intent-filter>
+        </receiver>
+        <!-- SMSReceiver -->
+        <receiver android:name="com.coretronic.bdt.Person.Register.SMSReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.coretronic.bdt.gcm.GCMIntentService"/>
+        <service android:enabled="true" android:name=".LocationBindService"/>
+        <service android:enabled="true" android:name=".TimerServices" android:label="gametimer"/>
+        <service android:name="com.coretronic.bdt.gcm.GCMIntentService"/>
+        <service android:name="com.coretronic.bdt.WalkWay.StepCount.StepCountBackService"/>
+
+        <!-- Goolge API Key -->
+        <meta-data
+                android:name="com.google.android.maps.v2.API_KEY"
+                android:value="AIzaSyA8DUvQyY7pX50ZJ3IYAk0-la463zgl4kg"/>
+        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version"/>
+
+    </application>
+</manifest>

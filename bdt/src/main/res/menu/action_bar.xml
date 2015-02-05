@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.coretronic.bdt">
+    <item
+            android:id="@+id/item2"
+            android:icon="@android:drawable/btn_dropdown"
+            android:showAsAction="always"
+            android:title="item2"/>
+</menu>

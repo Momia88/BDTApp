@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ******* common ******* -->
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="notsure">不一定</string>
+    <string name="enter_doctor_name_alert">請正確輸入醫生姓名</string>
+    <string name="enter_hospital_name_alert">請正確輸入醫院診所名稱</string>
+    <string name="check_exit">確定要離開?</string>
+    <string name="qacheck_exit">離開問答,回首頁</string>
+    <string name="sure">確定</string>
+    <string name="exit">離開</string>
+    <string name="sure_exit">確定離開</string>
+    <string name="cancel">取消</string>
+    <string name="next_question">下一題</string>
+    <string name="back_tohome">回首頁</string>
+    <string name="diary_save_alert">請問您是否要儲存？</string>
+    <string name="diary_upload_fail">分享日記失敗，是否要重試？</string>
+    <string name="save">儲存</string>
+    <string name="not_save">不儲存</string>
+    <string name="retry">重試</string>
+
+    <string name="dialog_title">訊息</string>
+    <string name="dialog_download_msg">下載中，請稍侯…</string>
+    <string name="dialog_read_msg">資料讀取中，請稍侯…</string>
+    <string name="dialog_msg_callout_ask">確定撥打電話？</string>
+    <string name="dialog_msg_callout">撥打</string>
+    <string name="dialog_msg_callout_cancel">取消</string>
+    <string name="data_load_error">網路出了一點狀況，\n請確認網路狀態再試</string>
+    <string name="get_data_error">無法順利從後台讀取到資料，請確認您的網路或重新再試。</string>
+    <string name="returndata_error">回傳資料發生錯誤!</string>
+    <string name="send_data_error">傳送失敗，請再試一次！</string>
+
+    <string name="data_renew_error">後台資料更新中，請稍侯再試</string>
+    <string name="data_load_timeout">連線逾時！</string>
+    <string name="data_result_error">回傳資料有誤，請連絡管理員！</string>
+    <string name="qa_less_time_alert">你今天已經玩耍過囉~</string>
+    <string name="transferdTimeError">時間讀取發生錯誤。~</string>
+    <string name="network_off_alert">健康八達通常常需要使用網路，請先開啟請您的網路再試，謝謝。</string>
+    <string name="gps_off_alert">喔喔!要開啟GPS健康龜才能知道今天的天氣狀況唷~</string>
+    <string name="goto_turnon_gps">跟我走!我帶您去開GPS~</string>
+    <string name="dont_goto_turnon_gps">暫時不要開啟GPS</string>
+    <string name="cannt_not_find_app">在你的手機無法找到可以分享的應用程式唷！</string>
+    <string name="share">分享</string>
+    <string name="punctuation"> 、 </string>
+    <string name="other">等</string>
+
+
+    <string name="app_name">健康八達通</string>
+    <string name="str_user_sex">您的性別</string>
+    <string name="str_user_birthday">您的生日</string>
+    <string name="str_user_age">您的年齡</string>
+    <string name="dialog_msg_answer_chose">請選擇答案</string>
+    <string name="dialog_birthday_alert">請選擇您的年齡唷~</string>
+    <string name="lunar_text">農曆</string>
+    <string name="diary_upload_dialog">日記分享中‧‧‧</string>
+    <!--<string name="diary_upload_dialog">您的日記分享中，上傳相片需要一點點時間，請等一下下。</string>-->
+
+    <!-- ******* tutorial page ******* -->
+    <string name="btn_start">開始使用</string>
+    <string name="welcome">歡迎使用</string>
+    <string name="coretronic_cloud">中強光電健康雲服務</string>
+    <string name="tutorial_oneminute_learn">一分鐘學會使用</string>
+    <string name="tutorial_star_use">開始使用後</string>
+    <string name="tutorial_click_here">點這裡</string>
+    <string name="tutorial_more_function">都有更多功能</string>
+    <string name="tutorial_skip_learn">略過教學</string>
+    <string name="tutorial_nextstep">下一步</string>
+    <string name="tutorial_start_use">開始使用</string>
+    <string name="tutorial_click_turtle">點健康龜</string>
+    <string name="tutorial_turtle_dance">健康龜會跳舞哦~&#10084; </string>
+    <string name="tutorial_click_play">輕觸影片繼續播放</string>
+    <string name="tutorial_video_load">教學影片讀取中\n請稍侯~</string>
+    <string name="video_loading">影片連接中，請稍待</string>
+    <string name="video_buffering">影片緩衝中..\n請再等一下下(</string>
+    <string name="tutorial_video_load_error">讀取教學影片發生錯誤!</string>
+    <string name="video_error_alert">播放教學影片發生錯誤，請再次確認您的網路是否正常連線。</string>
+    <string name="dairy_noedit_error">您未編輯任何內容，請點選上一步編輯內容再分享。</string>
+
+    <string name="back">返回</string>
+
+    <!-- ******* pharmacy finder page ******* -->
+    <string name="condiction_finder">以特殊條件搜尋</string>
+    <string name="nearly_finder">離我最近的藥局</string>
+
+    <!-- ******* doctor query info page ******* -->
+    <string name="morning">早</string>
+    <string name="afternoon">午</string>
+    <string name="night">晚</string>
+    <string name="calendar_mon">一</string>
+    <string name="calendar_tue">二</string>
+    <string name="calendar_wed">三</string>
+    <string name="calendar_thu">四</string>
+    <string name="calendar_fri">五</string>
+    <string name="calendar_sat">六</string>
+    <string name="calendar_sun">日</string>
+    <string name="doctor_work">●</string>
+
+    <!-- ******* doctor finder page ******* -->
+    <string name="button_config">一般搜尋</string>
+    <string name="doctor_button_near">離我最近的醫師</string>
+    <string name="doctor_title">我要找醫師</string>
+
+    <!-- ******* doctor finder config page ******* -->
+    <string name="spinner_prompt_area">地區選擇</string>
+    <string name="spinner_prompt_division">科別選擇</string>
+    <string name="text_keyword">關鍵字搜尋</string>
+    <string name="text_keyword_hint">非必填</string>
+    <string name="next_step">下一步</string>
+    <string name="no_data_show">目前尚無資料，\n請返回上一步重新查詢</string>
+    <string name="no_data_show2">目前尚無資料!</string>
+    <string name="config_doctor_name">醫師姓名</string>
+    <string name="config_hospital_name">醫院名稱</string>
+    <string name="config_address">地址</string>
+    <string name="config_another">其他</string>
+
+    <!-- ******* Doctor Query Info page ******* -->
+    <string name="comment_score">查看點評</string>
+    <string name="no_data_info">尚無資料</string>
+    <string name="working">看診中</string>
+    <string name="not_working">目前無看診</string>
+    <string name="no_workdata">目前無看診</string>
+
+    <!-- ******* Doctor finder config item page ******* -->
+    <string name="button_know_more">了解更多</string>
+    <string name="division">科別</string>
+    <string name="division_alert">請選擇科別</string>
+    <string name="area">地區</string>
+    <string name="area_alert">請選擇地區</string>
+
+    <!-- ******* Doctor Comment page ******* -->
+    <string name="comment_num">點評人數:</string>
+    <string name="comment_person">人</string>
+    <string name="just">只有</string>
+    <string name="total">&#032;共</string>
+    <string name="comment_result">點評結果:</string>
+    <string name="no_comment">尚無資料</string>
+
+    <!-- ******* Pharmacy Finder page ******* -->
+    <string name="pharmacy_title">我要找藥局</string>
+    <string name="pharmacy_button_near">離我最近的藥局</string>
+    <string name="pharmacy_type">類別</string>
+    <string name="pharmacy_work">營業中</string>
+    <string name="pharmacy_close">休息中</string>
+    <string name="pharmacy_nodata">尚無資料</string>
+    <string name="pharmacy_alert">請選擇藥局種類</string>
+    <string name="spinner_prompt_pharmacy">類別選擇</string>
+    <string name="config_pharmacy_name">藥局名稱</string>
+
+    <!-- ******* Pharmacy Finder page ******* -->
+    <string name="phone">電話</string>
+    <string name="nullphone">電話:尚無資料</string>
+    <!-- ******* doctor comment base adapter ***** -->
+    <string name="nopeople_comment">目前尚無留言</string>
+    <string name="gorecommend">&#060;我要留言&#062;</string>
+
+    <!-- ******* recommend doctor finder ******* -->
+    <string name="recommend_doctor_text_keyword">輸入醫師姓名</string>
+    <string name="recommend_title">推薦醫師</string>
+    <string name="match_data">符合 :</string>
+    <string name="match_data2"> 筆</string>
+    <string name="manual_add_doctor">自行新增醫師</string>
+    <string name="recommend_doctor_alert">建議您輸入推薦醫師的姓名或關鍵字，可以增加資料讀取的速度。</string>
+    <string name="recommend_pharmacy_alert">建議您輸入推薦藥局的名稱或關鍵字，可以增加資料讀取的速度。</string>
+
+    <!-- ******* recommend doctor message ******* -->
+    <string name="message_title">8.我要留言</string>
+    <string name="no_message_close">完成</string>
+    <string name="page_num">共0題(0/0)</string>
+
+    <!-- ******* recommend final ******* -->
+    <string name="exit_return_mainpage">回主畫面</string>
+    <string name="thanks_msg">感謝您的撥空填寫</string>
+    <string name="points">點</string>
+
+    <!-- ******* recommend_doctor_manual_add******* -->
+    <string name="enter_doctor_name">輸入醫師姓名</string>
+    <string name="enter_hospital_name">輸入醫院/診所名稱</string>
+    <string name="text_keyword_hint_need">必填</string>
+
+    <!-- ******* recommend pharmacy finder ******* -->
+    <string name="recommend_pharmacy_text_keyword">輸入藥局名稱</string>
+    <string name="recommend_pharmacy_title">推薦藥局</string>
+    <string name="manual_add_pharmacy">自行新增藥局</string>
+    <string name="enter_store_name_alert">請正確輸入藥局名稱</string>
+
+    <!-- ******* online doctor select body_ass part******* -->
+    <string name="online_doctor">線上家庭醫生</string>
+    <string name="online_doctor_body">選擇部位</string>
+    <string name="online_doctor_body_subpart">選擇子部位</string>
+    <string name="online_doctor_symptoms">選擇症狀</string>
+    <string name="online_doctor_subsymptoms">智能篩選</string>
+    <string name="online_doctor_question">問診</string>
+    <string name="online_doctor_diagmostic">可能疾病</string>
+    <string name="online_doctor_condition">詳細資料</string>
+
+    <string name="online_docton_select_a">是</string>
+    <string name="online_docton_select_b">否</string>
+
+    <!-- ******* health news******* -->
+    <string name="health_knowledge">健康心知</string>
+    <string name="favor_article">我的收藏</string>
+    <string name="reviewed">看過文章</string>
+    <string name="no_favor">您沒有收藏的文章</string>
+    <string name="no_reviewed">您沒有看過的文章</string>
+    <string name="find_article_menu_title">找文章</string>
+    <string name="find_article_keyWord">關鍵字</string>
+    <string name="health_news_share">分享</string>
+    <string name="favorite_this_article">收藏這篇文章</string>
+    <string name="start_find_article">開始找文章</string>
+    <string name="cancel_favorite_article">取消收藏</string>
+    <string name="enter_keyword">輸入關鍵字</string>
+    <string name="find_article">開始找文章</string>
+    <string name="favor_fail_alert">收藏此篇文章失敗，請重新載入文章再試。</string>
+    <string name="favor_article_ok_alert">您已收藏此文章。</string>
+    <string name="favor_article_cancel_alert">您已取消此文章收藏。</string>
+    <string name="line_nosetup_alert">您未安裝Line，故無法使用此功能分享。</string>
+    <string name="data_source">-資料來自 </string>
+    <string name="doupdata">資料加載中，請稍等</string>
+    <string name="android_download">Android下載</string>
+    <string name="ios_download">iOS下載</string>
+    <string name="health_question">健康問答</string>
+    <string name="health_next_question">繼續作答</string>
+
+    <!--main turtal text-->
+    <string name="game_alert_title">八達龜呼叫你</string>
+    <string name="game_hungry_alert_content">八達龜：我想吃東西~快來餵我東西吃</string>
+    <string name="game_clean_alert_content">八達龜：我身體好癢，可以帶我去洗澡嗎~</string>
+    <string name="game_clean_and_hungry_alert_content">八達龜：我身體好癢，又好餓好髒，我要離家出走了..</string>
+    <string name="temperature_unit">&#176;C</string>
+    <string name="rain">降雨機率</string>
+    <string name="rain_unit">&#037;</string>
+
+
+    <!--main new articles-->
+    <string name="notify_title">訊息通知</string>
+
+    <!--main new articles-->
+    <string name="new_artilces_title">新文章</string>
+    <string name="new_msg_title">新留言</string>
+    <string name="wall_msg_title">有誰按讚</string>
+
+
+    <!-- ******* WiFi NetWork ******* -->
+    <string name="network_check_title">網路中斷</string>
+    <string name="network_check_message">請檢查您的網路服務</string>
+
+    <!-- ******* workway finder page ******* -->
+    <string name="lb_ww_title">我要找步道</string>
+    <string name="btn_ww_visited">我到訪過的步道</string>
+    <string name="btn_ww_search">各縣市步道</string>
+    <string name="btn_ww_near">離我最近的步道</string>
+    <string name="btn_ww_record">我的步道成就</string>
+    <string name="lb_ww_area">地區</string>
+    <string name="lb_ww_distance">全程</string>
+    <string name="lb_ww_feature">特色</string>
+    <string name="spinner_prompt_walkway">選擇距離</string>
+    <string name="lb_ww_charts_title">排行榜</string>
+    <string name="btn_ww_more">了解更多</string>
+    <string name="ww_friend_list_title">有誰來過</string>
+
+
+    <!-- ******* diary finder page ******* -->
+    <string name="nochoose_photo">若您不想在此步驟選擇相片，請選擇略過，進行下一步。</string>
+    <string name="nochoose_photo_finish">若您不想在此步驟選擇相片，請選擇完成，進行下一步。</string>
+    <string name="click_back_alert">請問您確定要上一步嗎？點選上一步後此頁資料將被清除。</string>
+    <string name="diary_back">上一步</string>
+    <string name="alert_save_prefix">有一篇【 </string>
+    <string name="alert_save_suffix">】日記尚未完成，在寫新的以前，是否要把之前的編輯完成？</string>
+    <string name="alert_suspend_save">捨棄</string>
+    <string name="alert_goto_edit">前往編輯</string>
+    <string name="load_photo_error">讀取相片發生錯誤，請重新選擇您的相片。</string>
+    <string name="mission_hint1">在入口處拍一張</string>
+    <string name="mission_hint2">跟家人朋友合照</string>
+    <string name="mission_hint3">拍拍風景照</string>
+    <string name="mission_hint4">擺個活力的姿勢</string>
+    <string name="mission_hint5">最後一張步道留念</string>
+    <string name="wall_walkwayinfo">健走資訊：</string>
+    <string name="wall_walknum">健走步數：</string>
+    <string name="weather">天氣：</string>
+    <string name="walkway_unit">步</string>
+    <string name="diary_wall_iwentto">我今天去了</string>
+    <string name="feel_good_articles">覺得是好文章</string>
+    <string name="no_record">未記錄</string>
+
+    <!-- ******* qa helath page ******* -->
+    <string name="self_txt">本人 :</string>
+    <string name="qascore_unit"> 題</string>
+    <string name="prefix_unit">第 </string>
+    <string name="score_suffix_unit"> 名</string>
+    <string name="suffix_friends"> 位朋友</string>
+    <string name="suffix_members"> 位會員</string>
+    <string name="suffix_heart_unit"> 顆心</string>
+    <string name="prefix_all">所有</string>
+    <string name="backto_qasort">回到排行榜</string>
+    <string name="no_life">沒心囉！</string>
+    <string name="continue_play">繼續挑戰</string>
+    <string name="exit_play">放棄挑戰</string>
+    <string name="ans_error">答錯了！</string>
+    <string name="remain_heart">加油，還有：</string>
+    <string name="continue_correct">目前已連續答對</string>
+    <string name="you_remain_heart">你還有</string>
+    <string name="no_friends_text">您目前沒有朋友，\n快去會員裡加入好友吧!</string>
+    <string name="no_members_text">目前沒有其它會員。\n快推廣給您朋友一起使用吧!</string>
+    <string name="qa_exit_alert_text">離開會失去本次連續答對的成績，確定離開?</string>
+    <string name="notheart_alert_text">您目前無法繼續挑戰，歡迎明天再來挑戰。</string>
+    <string name="close">關閉</string>
+    <string name="today_score">今天的成績：</string>
+    <string name="prefix_score">連</string>
+    <string name="best_score">目前最佳的成績：</string>
+    <string name="qa_title">生活金頭腦</string>
+    <string name="qa_correct_title">答對了!太棒了!</string>
+    <string name="qa_continue_unit">連</string>
+    <string name="qa_unit">題</string>
+    <string name="data_sync">資料同步中，請稍後。</string>
+
+    <!-- *******  person page ******* -->
+    <string name="pp_title">個人資訊</string>
+    <string name="pp_person_list">個人功能</string>
+    <string name="pp_teach">如何使用健康八達通</string>
+    <string name="pp_about_me">認識健康八達通</string>
+    <string name="pp_wall">我的塗鴉牆</string>
+    <string name="pp_friend">好友列表</string>
+    <string name="pp_step_count">我的計步紀錄</string>
+    <string name="pp_login">登入</string>
+    <string name="pp_logout">登出</string>
+    <string name="pp_msg_need_register">這項服務只提供會員使用，歡迎加入我們！</string>
+    <string name="signin_advantage">加入會員的原因...</string>
+    <string name="pp_btn_register">我要加入會員</string>
+    <string name="pp_btn_cancel">取消</string>
+    <string name="pp_no_data">請輸入資料</string>
+    <string name="pp_register_title">成為會員</string>
+    <string name="pp_aboutme_title">關於我</string>
+    <string name="pp_add_article_title">新增文章</string>
+
+
+    <string name="pp_txt_name">名字/稱呼</string>
+    <string name="pp_txt_birthday">出生年月日</string>
+    <string name="pp_txt_sex">性別</string>
+    <string name="pp_txt_address">居住縣市</string>
+    <string name="pp_txt_phone">手機號碼</string>
+    <string name="pp_btn_ok">確定</string>
+    <string name="pp_btn_aboutme_sumit">確定儲存</string>
+    <string name="about_bdt">
+        「健康八達通」提供您豐富的內容，從生活健康知識，到室外活動步道資訊。\n\n「健康八達通」歡迎您與您的家人朋友們一起使用，挑戰生活金頭腦的每個題目，看誰厲害。\n\n希望「健康八達通」像個朋友參與您的生活，一起讓每一天更充實、更快樂、更健康。\n
+    </string>
+    <string name="bdt_version">版本號碼  1.0.0</string>
+
+    <!--friend-->
+    <string name="friend_edt_find_friend_hint">請輸入好友的電話(識別碼)</string>
+    <string name="friend_btn_find_friend">查找好友</string>
+    <string name="friend_about_title">關於辨識碼</string>
+    <string name="friend_about_description">您的手機號碼就是您目前的辨識碼。\n所以，您朋友的手機號碼就是他的識別碼喔!</string>
+    <string name="friend_inexistence_description">這個電話號碼(識別碼)\n不存在喔!</string>
+    <string name="friend_toast_please_enter_tel">請輸入電話號碼</string>
+    <string name="friend_toast_this_is_self_tel">這是您自己的電話號碼</string>
+    <string name="firend_btn_invite">邀請成為好友</string>
+    <string name="friend_state_tip_already_invite">你已經邀請過囉~~</string>
+    <string name="friend_state_tip_already_friend">你們已經是好友囉~~</string>
+    <string name="friend_btn_invite_again">再次送出邀請</string>
+    <string name="friend_btn_invite_break">結束好友關係</string>
+    <string name="friend_invite_break_check_message">確定結束和:name:成為好友?</string>
+    <string name="friend_invite_break_double_check_message">真的要結束?\n結束要再重新加入好友喔!</string>
+    <string name="friend_invite_want_be_friend">是否願意和:name:成為好友?</string>
+    <string name="friend_invite_want_cancel_friend">是否取消和:name:成為好友?</string>
+    <string name="friend_btn_exit">結束</string>
+    <string name="friend_btn_no_exit">不結束</string>
+    <string name="friend_btn_sure_exit">確定結束</string>
+    <string name="friend_btn_sure_no_exit">確定不結束</string>
+    <string name="friend_btn_want">願意</string>
+    <string name="friend_btn_no_want">不願意</string>
+    <string name="friend_btn_cancel">取消</string>
+    <string name="friend_btn_no_cancel">不取消</string>
+    <string name="friend_setting_auto_tip">我手機的通訊錄裡有儲存電話號碼的朋友，都自動幫我送出加入好友的邀請。</string>
+    <string name="friend_setting_auto_yes">是，自動幫我邀請</string>
+    <string name="friend_setting_auto_no">否，取消這項服務</string>
+    <string name="friend_auto_invited_message">已經幫您邀請了 :count: 個好友</string>
+    <string name="friend_no_need_auto_invite_message">沒有異動的聯絡人數量</string>
+    <string name="friend_auto_invite_no_contact_message">沒有聯絡人</string>
+    <string name="friend_auto_invite_failed_due_to_no_uid">自動邀請好友失敗，無法取得 User ID</string>
+    <string name="friend_after_auth_auto_invite_tip">是否協助您自動用手機通訊錄裡的聯絡人，送出加入好友的邀請。</string>
+    <string name="friend_btn_after_auth_auto_invite_yes">幫我送出</string>
+    <string name="friend_btn_after_auth_auto_invite_no">暫時不要</string>
+    <string name="wall_no_friend_msg">目前沒有人留言！</string>
+    <string name="msg_get_more">查看更多留言</string>
+
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <ImageView
+            android:id="@+id/audio_pop_background"
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
+            android:src="@drawable/health_audio_speak"
+            android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:id="@+id/audio_pop_play"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_h_audio_pause"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

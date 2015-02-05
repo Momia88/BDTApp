@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <include layout="@layout/action_bar_with_record"/>
+
+        <TextView
+                android:id="@+id/ww_txt_visit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="已到訪過"
+                android:padding="10dp"
+                android:textColor="@color/txt_redbrown"
+                android:background="@color/block_ded6de"
+                android:textSize="@dimen/common_size"/>
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <RelativeLayout
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp">
+                    <ImageView
+                            android:id="@+id/ww_img_percent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_percent_light_0"
+                            android:scaleType="fitCenter"/>
+                    <ImageView
+                            android:id="@+id/ww_img_tw_map"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_tw_center_light"
+                            android:scaleType="fitCenter"
+                            android:padding="20dp"/>
+                </RelativeLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="left">
+                    <TextView
+                            android:id="@+id/ww_lb_tw_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="中台灣"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/common_size_large"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="left">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="步道數"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/common_size_small"/>
+
+                        <TextView
+                                android:id="@+id/ww_lb_walkway_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="6/17"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/txt_ec6a1a"
+                                android:textSize="@dimen/common_size_small"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                    android:id="@+id/ww_img_good"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_ww_medal_20"
+                    android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <ExpandableListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/expandableListView"
+                />
+
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="我到訪過的步道"-->
+        <!--android:textColor="@color/txt_origin"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textSize="@dimen/common_size_small"/>-->
+
+        <!--<ListView-->
+        <!--android:id="@+id/ww_me_visited_listView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="等你到此一遊"-->
+        <!--android:textColor="@color/txt_origin"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textSize="@dimen/common_size_small"/>-->
+
+        <!--<ListView-->
+        <!--android:id="@+id/ww_me_go_listView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+        <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+
+    </LinearLayout>
+</RelativeLayout>

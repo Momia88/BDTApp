@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@android:id/text1"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:ellipsize="marquee"
+          android:layout_gravity="center"
+          android:gravity="center_vertical"
+          android:paddingTop="16dip"
+          android:paddingBottom="16dip"
+          android:paddingLeft="8dip"
+          android:singleLine="true"
+          android:textColor="@color/actionbar"
+          android:textSize="@dimen/common_size"
+          android:background="@drawable/spinner_border">
+</TextView>

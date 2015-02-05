@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+    <include layout="@layout/action_bar_no_option"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnSummit">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <EditText
+                        android:id="@+id/txtMsgShare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="top"
+                        android:padding="10dp"
+                        android:lines="5"
+                        android:maxLength="20"
+                        android:hint="請輸入您想說的的話"
+                        android:textSize="26dp"
+                        android:background="@drawable/spinner_border_white"
+                        android:visibility="visible"/>
+
+                <Button
+                        android:id="@+id/btnPhotoAdd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="加上圖片"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:textSize="@dimen/common_size"
+                        android:textColor="@drawable/txt_style_solid_brown_1"
+                        android:background="@drawable/btn_style_solid_brown_1"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:visibility="visible">
+
+
+                    <HorizontalScrollView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content">
+                        <LinearLayout
+                                android:id="@+id/imgListView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+                <Button
+                        android:id="@+id/btnSummit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="28dp"
+                        android:layout_margin="10dp"
+                        android:text="發佈分享"
+                        android:textColor="@drawable/txt_style_solid_brown_2"
+                        android:background="@drawable/btn_style_solid_orange"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

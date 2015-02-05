@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#ffffffff"
+              android:weightSum="1">
+    <include layout="@layout/action_bar_with_back"/>
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="20dip"
+            android:gravity="center">
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:text="科別"
+           android:id="@+id/textDivision_2"
+           android:layout_gravity="center"
+           android:textColor="@color/tutor_skip"
+           android:textSize="@dimen/common_size"
+           android:layout_marginLeft="20dip"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/walkway_location_distance_type_spinner"
+            android:prompt="@string/spinner_prompt_division"
+            android:spinnerMode="dialog"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/spinner_border"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+    <!--<WebView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/googleMapView"-->
+            <!--android:layout_gravity="center_horizontal"/>-->
+    <fragment
+            android:id="@+id/doctor_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:clickable="true"
+            android:layout_marginTop="30dip"/>
+</LinearLayout>

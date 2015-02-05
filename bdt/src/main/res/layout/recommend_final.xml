@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#ffffffff"
+              android:weightSum="1">
+    <include layout="@layout/action_bar_with_back"/>
+
+
+    <TextView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/thanks_msg"
+            android:id="@+id/action_bar_title"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/tutor_skip"
+            android:textSize="@dimen/common_size"
+            android:layout_marginTop="80dip"
+            android:layout_marginBottom="100dip"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:text="@string/exit_return_mainpage"
+            android:id="@+id/return_video"
+            android:textSize="@dimen/common_size"
+            android:textColor="@color/tutor_skip"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_shape_selector"/>
+</LinearLayout>

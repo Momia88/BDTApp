@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:id="@+id/good_food">
+
+    <include layout="@layout/action_bar_with_back"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/action_bar_title"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="100dp"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:text="結束離開"
+            android:id="@+id/return_video"
+            android:textSize="@dimen/common_size"
+            android:textColor="@drawable/text_goodfood_finder"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/btn_goodfood_finder"/>
+
+</LinearLayout>

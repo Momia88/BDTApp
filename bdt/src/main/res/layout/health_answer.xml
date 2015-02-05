@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1"
+              android:background="#ffffffff">
+    <include layout="@layout/action_bar_with_back"/>
+
+    <LinearLayout
+            android:id="@+id/answerLL"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal">
+
+        <!--<LinearLayout-->
+                <!--android:id="@+id/animateLL"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="400dp"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_gravity="center_horizontal">-->
+        <!--</LinearLayout>-->
+
+        <com.coretronic.bdt.module.AnimatedGifImageView
+                android:id="@+id/ans_animate"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"/>
+
+        <Button android:id="@+id/health_answeer_next_question_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/common_size"
+                android:textColor="@color/black"
+                android:text="@string/health_next_question"
+                android:background="@drawable/health_qabtn_shape_selector"/>
+
+    </LinearLayout>
+
+    <!--Detail content layout -->
+    <LinearLayout
+            android:id="@+id/answerDetailLL"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:id="@+id/news_photo"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/qanews_no_image"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/news_title"
+                        android:text="       "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_size"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="8dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="      "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/health_news_content_size"
+                        android:singleLine="false"
+                        android:id="@+id/news_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignRight="@+id/news_title"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="      "
+                        android:id="@+id/news_author"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/health_news_content_size"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="right"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="     "
+                        android:id="@+id/news_data"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/health_news_content_size"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_gravity="right"/>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+
+                    <Button
+                            android:id="@+id/exitBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:textSize="@dimen/common_size"
+                            android:textColor="@color/black"
+                            android:background="@drawable/health_qabtn_shape_selector"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/exit"
+                            android:layout_weight="1"/>
+
+                    <Button
+                            android:id="@+id/health_answer_detail_next_ques_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:textSize="@dimen/common_size"
+                            android:textColor="@color/black"
+                            android:background="@drawable/health_qabtn_shape_selector"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:text="@string/next_question"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
+

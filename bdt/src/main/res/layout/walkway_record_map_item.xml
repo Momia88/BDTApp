@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ww_area_item_layout"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <RelativeLayout
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp">
+            <ImageView
+                    android:id="@+id/ww_img_percent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_percent_light_0"
+                    android:scaleType="fitCenter"/>
+            <ImageView
+                    android:id="@+id/ww_img_tw_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_tw_center_deep"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="left">
+            <TextView
+                    android:id="@+id/ww_lb_tw_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中台灣"
+                    android:textColor="@color/txt_3c2622"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/common_size_large"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="步道數"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_size_small"/>
+
+            <TextView
+                    android:id="@+id/ww_lb_walkway_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6/17"
+                    android:textColor="@color/txt_ec6a1a"
+                    android:textSize="@dimen/common_size_small"/>
+
+            <Button
+                    android:id="@+id/ww_btn_record_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="@string/btn_ww_more"
+                    android:textSize="@dimen/txt_size_24"
+                    android:textColor="@drawable/txt_style_solid_brown_1"
+                    android:background="@drawable/btn_style_solid_brown_1"
+                    android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

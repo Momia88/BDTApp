@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/mission_step1_res_bg"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:clickable="true">
+    <include layout="@layout/action_bar_with_tools"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/bar_total">
+
+        <View android:id="@+id/bar_cnt"
+              android:layout_height="10dp"
+              android:layout_width="match_parent"
+              android:background="@color/bar_current"/>
+
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+            android:layout_gravity="center_horizontal">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_gravity="center_horizontal"
+                          android:gravity="center"
+                          android:layout_marginTop="20dp">
+
+                <ImageView android:layout_width="80dp"
+                           android:layout_height="100dp"
+                           android:layout_marginRight="8dp"
+                           android:src="@drawable/mission_photo1"/>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_marginLeft="0dp">
+
+
+                    <TextView
+                            android:id="@+id/mission1_res_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="任務1："
+                            android:textSize="30sp"
+                            android:textColor="@android:color/black"
+                            />
+                    <TextView
+                            android:id="@+id/mission1_res_take_photo_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="在入口處拍一張"
+                            android:textSize="30sp"
+                            android:textColor="@android:color/black"
+                            />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--<LinearLayout android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/photoLL"-->
+            <!--android:background="@color/yellow">-->
+            <ImageView
+                    android:id="@+id/mission1_res_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="30sp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/red"/>
+            <!--</LinearLayout>-->
+
+            <TextView android:id="@+id/mission1_res_camera_btn"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="30dp"
+                      android:layout_marginRight="30dp"
+                      android:layout_marginTop="20dp"
+                      android:text="註解："
+                      android:textColor="@android:color/black"
+                      android:textSize="30sp"/>
+
+            <RelativeLayout android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                <EditText android:id="@+id/mission1_res_et"
+                          android:layout_width="fill_parent"
+                          android:layout_height="150dp"
+                          android:layout_marginLeft="30dp"
+                          android:layout_marginRight="20dp"
+                          android:layout_marginTop="10dp"
+                          android:textColor="@color/diary_dark_brown"
+                          android:maxLength="50"
+                          android:textSize="30sp"
+                          android:gravity="top|left"
+                          android:maxLines="10"
+                          android:hint="請輸入您想說的話"/>
+
+                <Button android:id="@+id/sentenceBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="句庫"
+                        android:layout_alignBottom="@+id/mission1_res_et"
+                        android:layout_alignRight="@+id/mission1_res_et"
+                        android:textSize="30sp"
+                        android:textColor="@color/dark_redbrown"
+                        android:background="@drawable/btn_style_solid_yelloworange"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                          android:id="@+id/btnLL"
+                          android:orientation="horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent">
+
+
+                <Button android:id="@+id/mission1_res_back_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:text="上一步"
+                        android:textSize="30sp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/btn_style_solid_darkbrown"/>
+
+                <Button android:id="@+id/mission1_res_next_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:text="下一步"
+                        android:textSize="30sp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/btn_style_solid_darkbrown"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

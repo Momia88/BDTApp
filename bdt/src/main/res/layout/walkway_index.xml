@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent">
+    <include layout="@layout/action_bar_no_option"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+            >
+        <Button
+                android:id="@+id/btn_ww_search"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="@string/btn_ww_search"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/common_size"
+                android:layout_marginTop="40dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginBottom="5dip"
+                android:textColor="@drawable/txt_style_solid_brown_2"
+                android:background="@drawable/btn_style_solid_brown_2"/>
+
+        <Button
+                android:id="@+id/btn_ww_near"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="@string/btn_ww_near"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/common_size"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginBottom="5dip"
+                android:textColor="@drawable/txt_style_solid_brown_2"
+                android:background="@drawable/btn_style_solid_brown_2"/>
+        <Button
+                android:id="@+id/btn_ww_record"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="@string/btn_ww_record"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/common_size"
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:textColor="@drawable/txt_style_solid_brown_2"
+                android:background="@drawable/btn_style_solid_brown_2"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginBottom="20dp"
+                  android:gravity="bottom"
+                  android:layout_gravity="bottom">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text=" 資料來源：\n台北市政府工務局大地工程處"
+                  android:textSize="@dimen/txt_size_10"
+                />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="新北市觀光旅遊局"
+                  android:textSize="@dimen/txt_size_10"
+                />
+        <TextView android:id="@+id/tonyCopyrightTV"
+                android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Tony的自然人文旅記(http://www.tonyhuang39.com)
+"
+                  android:textSize="@dimen/txt_size_10"
+                   />
+    </LinearLayout>
+</LinearLayout>
+

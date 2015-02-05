@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/mainLL"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_margin="0dp">
+
+
+    <LinearLayout
+            android:id="@+id/viewLL"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.4"
+            >
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center_horizontal"
+                      android:gravity="center_horizontal">
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="@string/tutorial_nextstep"
+                    android:id="@+id/nextstep"
+                    android:textSize="@dimen/common_size"
+                    android:textColor="@drawable/btn_white_darkbrown_text"
+                    android:background="@drawable/btn_style_solid_lightbrown"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/videoLL"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_weight="0.8" android:gravity="center_horizontal">-->
+
+
+    <FrameLayout
+            android:id="@+id/playerFL"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
+        <SurfaceView android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:id="@+id/surfView"
+                     android:layout_marginLeft="20dp"
+                     android:layout_marginRight="20dp"
+                     android:layout_marginBottom="20dp"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/loadTV"
+                android:gravity="right|bottom"
+                android:textSize="@dimen/common_size"
+                android:textColor="@color/tutor_load"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="30dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/pauseHintTV"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="@dimen/common_size"
+                android:textColor="@color/tutor_load"
+                android:background="@color/videotxtbg"
+                />
+    </FrameLayout>
+    <!--</LinearLayout>-->
+
+</LinearLayout>

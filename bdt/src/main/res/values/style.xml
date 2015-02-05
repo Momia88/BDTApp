@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="customHoloButton" parent="android:Widget.Button">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="customAlertDialog"
+           parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:buttonStyle">@style/customHoloButton</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="customProgressDialog"
+           parent="@android:style/Theme.Dialog">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="popWindow" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!-- Custom Theme -->
+    <style name="BDTTheme" parent="android:Theme">
+        <item name="android:radioButtonStyle">@style/RadioButton</item>
+    </style>
+    <style name="RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/radio</item>
+    </style>
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1"
+              android:background="#ffffffff">
+    <include layout="@layout/action_bar_with_back"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="doctorName"
+            android:id="@+id/doctorName"
+            android:textStyle="bold"
+            android:textSize="@dimen/main_text_size"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/division"
+            android:textColor="@color/black"
+            android:textSize="@dimen/doctor_commen_division"
+            android:layout_marginLeft="30dp"/>
+    <View
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_comment"
+            android:id="@+id/noDataTV"
+            android:visibility="gone"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/doctor_commen_division"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/contentLL">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comment_num"
+                android:id="@+id/commentNum"
+                android:textColor="@color/black"
+                android:textSize="@dimen/doctor_comment_ques_size"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="right"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comment_result"
+                android:id="@+id/commentResult"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/doctor_comment_ques_size"
+                android:gravity="right"/>
+        <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/listView"/>
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_gravity="center_horizontal"/>-->
+    </LinearLayout>
+
+</LinearLayout>
+

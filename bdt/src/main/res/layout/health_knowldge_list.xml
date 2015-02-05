@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              android:background="@color/white">
+
+    <include layout="@layout/action_bar_with_back"/>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:layout_gravity="center_horizontal"
+            android:divider="#e5e5e5"
+            android:dividerHeight="6dp"/>
+            <!--android:background="@drawable/listview_click_selector"/>-->
+            <!--android:background="@drawable/listview_click_selector"/>-->
+    <TextView
+            android:id="@+id/no_datatv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_size"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"/>
+</LinearLayout>

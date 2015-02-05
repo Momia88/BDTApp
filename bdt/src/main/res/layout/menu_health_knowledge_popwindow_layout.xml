@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/common_size"
+                android:lines="3"
+                android:text="全部\n文章"
+                android:id="@+id/allArticle"
+                android:textColor="@color/black"
+                android:background="@color/pop_window_odd"
+                android:layout_margin="4dp"
+                />
+
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:lines="3"
+                android:textSize="@dimen/common_size"
+                android:text="我的\n收藏"
+                android:id="@+id/myFavorite"
+                android:textColor="@color/black"
+                android:background="@color/pop_window_even"
+                android:layout_margin="4dp"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:lines="3"
+                android:textSize="@dimen/common_size"
+                android:text="看過\n文章"
+                android:id="@+id/reviewed"
+                android:textColor="@color/black"
+                android:background="@color/pop_window_even"
+                android:layout_margin="4dp"/>
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:lines="3"
+                android:textSize="@dimen/common_size"
+                android:text="關鍵字\n搜尋"
+                android:id="@+id/findArticle"
+                android:textColor="@color/black"
+                android:background="@color/pop_window_odd"
+                android:layout_margin="4dp"/>
+    </LinearLayout>
+</LinearLayout>

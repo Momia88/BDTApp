@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1"
+              android:background="@color/white">
+    <include layout="@layout/action_bar_no_option"/>
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/pp_menu_login_about_me"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                <ImageView
+                        android:id="@+id/pp_img_user_photo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/pp_ic_img_default"
+                        android:layout_margin="10dp"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="關於我"
+                            android:textColor="@color/pp_text_color_black"
+                            android:textSize="@dimen/common_size"/>
+                    <TextView
+                            android:id="@+id/pp_txt_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/pp_text_color_black"
+                            android:text=" - - "
+                            android:textSize="@dimen/common_size_large"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <View android:layout_height="10dp"
+                      android:layout_width="match_parent"
+                      android:background="@color/pp_line_color_33"/>
+
+                <LinearLayout
+                        android:id="@+id/pp_btn_login"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="@drawable/btn_style_solid"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical">
+
+                    <ImageView
+                            android:id="@+id/pp_menu_img_login"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
+                            android:src="@drawable/pp_ic_login"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="登入會員"
+                              android:textSize="@dimen/common_size"
+                              android:textColor="@color/black"
+                              android:background="@android:color/transparent"
+                              android:layout_weight="3"/>
+                </LinearLayout>
+                <View android:layout_height="1dp"
+                      android:layout_width="match_parent"
+                      android:background="@color/pp_line_color"/>
+
+                <LinearLayout
+                        android:id="@+id/pp_btn_about_me"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/btn_style_solid"
+                        android:gravity="center_vertical">
+
+                    <ImageView
+                            android:id="@+id/pp_menu_img_about_me"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
+                            android:src="@drawable/pp_ic_about_me_gray"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="關於我"
+                              android:textSize="@dimen/common_size"
+                              android:textColor="@color/pp_text_color_brown"
+                              android:background="@android:color/transparent"
+                              android:layout_weight="3"/>
+                </LinearLayout>
+                <View android:layout_height="1dp"
+                      android:layout_width="match_parent"
+                      android:background="@color/pp_line_color"/>
+
+                <LinearLayout
+                        android:id="@+id/pp_btn_wall"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/btn_style_solid"
+                        android:gravity="center_vertical">
+
+                    <ImageView
+                            android:id="@+id/pp_menu_img_wall"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
+                            android:src="@drawable/pp_ic_wall_gray"/>
+
+                    <TextView
+                            android:id="@+id/pp_menu_txt_wall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的塗鴉牆"
+                            android:textSize="@dimen/common_size"
+                            android:textColor="@color/pp_text_color_brown"
+                            android:background="@android:color/transparent"
+                            android:layout_weight="3"/>
+                </LinearLayout>
+                <View android:layout_height="1dp"
+                      android:layout_width="match_parent"
+                      android:background="@color/pp_line_color"/>
+
+                <LinearLayout
+                        android:id="@+id/pp_btn_count"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/btn_style_solid"
+                        android:gravity="center_vertical">
+
+                    <ImageView
+                            android:id="@+id/pp_menu_img_count"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
+                            android:src="@drawable/pp_ic_count_gray"/>
+
+                    <TextView
+                            android:id="@+id/pp_menu_txt_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的計步紀錄"
+                            android:textSize="@dimen/common_size"
+                            android:textColor="@color/pp_text_color_brown"
+                            android:background="@android:color/transparent"
+                            android:layout_weight="3"/>
+                </LinearLayout>
+                <View android:layout_height="10dp"
+                      android:layout_width="match_parent"
+                      android:background="@color/pp_line_color_33"/>
+
+                <LinearLayout
+                        android:id="@+id/pp_btn_friends"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/btn_style_solid"
+                        android:gravity="center_vertical">
+
+                    <ImageView
+                            android:id="@+id/pp_menu_img_friend"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
+                            android:src="@drawable/pp_ic_friend_gray"/>
+
+                    <TextView
+                            android:id="@+id/pp_menu_txt_friend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="好友列表"
+                            android:textSize="@dimen/common_size"
+                            android:textColor="@color/pp_text_color_brown"
+                            android:background="@android:color/transparent"
+                            android:layout_weight="3"/>
+                </LinearLayout>
+                <View android:layout_height="1dp"
+                      android:layout_width="match_parent"
+                      android:background="@color/pp_line_color"/>
+
+                <LinearLayout
+                        android:id="@+id/pp_btn_auto_friends"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/btn_style_solid"
+                        android:gravity="center_vertical">
+
+                    <ImageView
+                            android:id="@+id/pp_menu_img_auto_friend"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
+                            android:src="@drawable/pp_ic_friend_gray"/>
+
+                    <TextView
+                            android:id="@+id/pp_menu_txt_auto_friend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="自動幫我加好友"
+                            android:textSize="@dimen/common_size"
+                            android:textColor="@color/pp_text_color_brown"
+                            android:background="@android:color/transparent"
+                            android:layout_weight="3"/>
+                </LinearLayout>
+                <View android:layout_height="1dp"
+                      android:layout_width="match_parent"
+                      android:background="@color/pp_line_color"/>
+
+                <LinearLayout
+                        android:id="@+id/pp_btn_msg"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/btn_style_solid"
+                        android:gravity="center_vertical">
+
+                    <ImageView
+                            android:id="@+id/pp_menu_img_msg"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
+                            android:src="@drawable/pp_ic_message_gray"/>
+
+                    <TextView
+                            android:id="@+id/pp_menu_txt_msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="訊息通知"
+                            android:textSize="@dimen/common_size"
+                            android:textColor="@color/pp_text_color_brown"
+                            android:background="@android:color/transparent"
+                            android:layout_weight="3"/>
+                </LinearLayout>
+                <View android:layout_height="10dp"
+                      android:layout_width="match_parent"
+                      android:background="@color/pp_line_color_33"/>
+
+                <LinearLayout
+                        android:id="@+id/pp_btn_teach"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/btn_style_solid"
+                        android:gravity="center_vertical">
+
+                    <ImageView
+                            android:id="@+id/pp_menu_img_teach"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
+                            android:src="@drawable/pp_ic_teach"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="如何使用八達通"
+                              android:textSize="@dimen/common_size"
+                              android:textColor="@color/black"
+                              android:layout_weight="3"/>
+                </LinearLayout>
+                <View android:layout_height="1dp"
+                      android:layout_width="match_parent"
+                      android:background="@color/pp_line_color"/>
+
+                <LinearLayout
+                        android:id="@+id/pp_btn_about_bdt"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/btn_style_solid"
+                        android:gravity="center_vertical">
+
+                    <ImageView
+                            android:id="@+id/pp_menu_img_about_bdt"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="30dp"
+                            android:src="@drawable/pp_ic_about_bdt"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="認識八達通"
+                              android:textSize="@dimen/common_size"
+                              android:textColor="@color/black"
+                              android:layout_weight="3"/>
+                </LinearLayout>
+
+                <View android:layout_height="10dp"
+                      android:layout_width="match_parent"
+                      android:background="@color/pp_line_color_33"/>
+
+                <!--<LinearLayout-->
+                        <!--android:id="@+id/pp_btn_logout"-->
+                        <!--android:clickable="true"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:background="@drawable/btn_style_solid"-->
+                        <!--android:gravity="center_vertical">-->
+
+                    <!--<ImageView-->
+                            <!--android:id="@+id/pp_menu_logout"-->
+                            <!--android:layout_width="60dp"-->
+                            <!--android:layout_height="60dp"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:layout_marginRight="30dp"-->
+                            <!--android:src="@drawable/pp_ic_logout"/>-->
+
+                    <!--<TextView-->
+                            <!--android:id="@+id/pp_menu_txt_logout"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="登出"-->
+                            <!--android:textSize="@dimen/common_size"-->
+                            <!--android:textColor="@color/black"-->
+                            <!--android:layout_weight="3"/>-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

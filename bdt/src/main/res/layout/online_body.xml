@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="1"
+                android:background="#ffffffff">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_next">
+
+        <include layout="@layout/action_bar_with_back"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_size"
+                android:textColor="@color/black"
+                android:text="選擇您不舒適的部位或勾選全身(可複選)"
+                android:id="@+id/online_doctor_tilte"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="20dp">
+
+            <CheckBox
+                    android:id="@+id/checkBodyAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全身"
+                    android:textSize="@dimen/common_size"
+                    android:textColor="@color/black"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"/>
+
+            <RelativeLayout
+                    android:id="@+id/body_front_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible">
+
+                <ImageView android:layout_width="65dp"
+                           android:layout_height="65dp"
+                           android:scaleType="fitCenter"
+                           android:id="@+id/body_head"
+                           android:layout_centerHorizontal="true"/>
+
+                <ImageView android:layout_width="65dp"
+                           android:layout_height="9dp"
+                           android:id="@+id/body_neck"
+                           android:scaleType="fitXY"
+                           android:layout_below="@+id/body_head"
+                           android:layout_centerHorizontal="true"/>
+
+                <ImageView android:layout_width="65dp"
+                           android:layout_height="41dp"
+                           android:id="@+id/body_chest"
+                           android:layout_below="@+id/body_neck"
+                           android:scaleType="fitXY"
+                           android:layout_centerHorizontal="true"/>
+
+                <ImageView android:layout_width="65dp"
+                           android:layout_height="160dp"
+                           android:id="@+id/body_left"
+                           android:scaleType="fitXY"
+                           android:layout_toLeftOf="@+id/body_chest"/>
+
+                <ImageView android:layout_width="65dp"
+                           android:layout_height="160dp"
+                           android:id="@+id/body_right"
+                           android:scaleType="fitXY"
+                           android:layout_toRightOf="@+id/body_chest"/>
+
+                <ImageView android:layout_width="65dp"
+                           android:layout_height="40dp"
+                           android:id="@+id/body_waist"
+                           android:layout_below="@+id/body_chest"
+                           android:scaleType="fitXY"
+                           android:layout_centerHorizontal="true"/>
+
+                <ImageView android:layout_width="180dp"
+                           android:layout_height="25dp"
+                           android:id="@+id/body_secret"
+                           android:layout_below="@+id/body_waist"
+                           android:scaleType="fitXY"
+                           android:layout_centerHorizontal="true"/>
+
+                <ImageView android:layout_width="180dp"
+                           android:layout_height="100dp"
+                           android:id="@+id/body_foot"
+                           android:layout_below="@+id/body_secret"
+                           android:scaleType="fitXY"
+                           android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/body_back_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone">
+
+                <ImageView android:id="@+id/body_back_part"
+                           android:layout_width="195dp"
+                           android:layout_height="280dp"
+                           android:scaleType="fitXY"
+                           android:layout_centerHorizontal="true"/>
+                <Button android:id="@+id/body_back"
+                      android:layout_width="70dp"
+                      android:layout_height="50dp"
+                      android:focusable="true"
+                      android:background="@drawable/btn_body_back_selecter"
+                      android:gravity="center"
+                      android:textColor="@color/red"
+                      android:textSize="@dimen/main_text_size"
+                      android:layout_marginTop="90dp"
+                      android:layout_centerInParent="true"
+                      android:layout_alignParentTop="true"/>
+                <Button android:id="@+id/body_back_ass"
+                      android:layout_width="70dp"
+                      android:layout_height="50dp"
+                      android:focusable="true"
+                      android:textSize="@dimen/main_text_size"
+                      android:gravity="center"
+                      android:textColor="@color/red"
+                      android:background="@drawable/btn_body_back_selecter"
+                      android:layout_centerInParent="true"
+                      android:layout_below="@+id/body_back"/>
+            </RelativeLayout>
+
+            <RadioGroup
+                    android:id="@+id/online_radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true">
+                <RadioButton
+                        android:id="@+id/online_radio_front"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/common_size"
+                        android:text="正面"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:checked="true"/>
+                <RadioButton
+                        android:id="@+id/online_radio_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/common_size"
+                        android:textColor="@color/black"
+                        android:text="背面"
+                        android:layout_weight="1"/>
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/layout_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp">
+
+        <Button
+                android:id="@+id/online_select_body_next"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textSize="@dimen/common_size"
+                android:text="@string/next_step"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_shape_selector"/>
+    </LinearLayout>
+</RelativeLayout>
+
